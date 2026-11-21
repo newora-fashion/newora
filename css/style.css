@@ -47,6 +47,8 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -55,6 +57,7 @@ body {
   color: var(--color-text);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -938,7 +941,7 @@ ul {
 }
 
 /* ===================================================================
-   Courier Process Section ("Doorstep Speed Courier")
+   Courier Process Section ("Fast Speed Courier")
    "redi gedattama curior karnawa, speed curior"
    =================================================================== */
 .process-grid {
@@ -1237,8 +1240,10 @@ ul {
 }
 
 /* ===================================================================
-   Responsive Media Queries
+   Responsive Media Queries & Mobile Optimizations
    =================================================================== */
+
+/* Tablet & Smaller Laptops (max-width: 992px) */
 @media (max-width: 992px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1247,6 +1252,7 @@ ul {
   .hero-visual {
     max-width: 480px;
     margin: 0 auto;
+    width: 100%;
   }
   .fb-feed-grid {
     grid-template-columns: 1fr;
@@ -1266,48 +1272,215 @@ ul {
   }
 }
 
+/* Tablets Portrait & Large Phones (max-width: 768px) */
 @media (max-width: 768px) {
+  /* Hide top announcement bar on mobile devices */
+  .top-bar {
+    display: none !important;
+  }
+
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .brand-masthead {
+    padding: 18px 16px 12px;
+  }
+  .brand-masthead .brand-title {
+    font-size: clamp(2.2rem, 8.5vw, 3.4rem);
+    letter-spacing: 0.16em;
+  }
+  .brand-masthead .brand-tagline {
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    line-height: 1.4;
+  }
+
   .nav-links {
     position: fixed;
     top: 60px;
     left: 0;
     width: 100%;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
     background-color: var(--color-surface);
     flex-direction: column;
-    padding: 24px;
+    padding: 20px 24px;
     border-bottom: 1px solid var(--color-border);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-150%);
-    transition: transform var(--transition-normal);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform var(--transition-normal), opacity var(--transition-normal), visibility var(--transition-normal);
   }
   .nav-links.active {
     transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
+  .nav-link {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  }
+
   .mobile-menu-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    color: var(--color-primary);
+  }
+  .mobile-menu-toggle.active {
+    color: var(--color-secondary);
   }
   .nav-logo-mini {
     display: block;
+    font-size: 1.25rem;
+  }
+
+  .hero {
+    padding: 48px 0 60px;
+  }
+  .hero-title {
+    font-size: clamp(2rem, 6.5vw, 2.8rem);
   }
   .hero-trust-bar {
     grid-template-columns: 1fr;
     gap: 12px;
   }
+
+  /* Prevent quality badge from pushing off-screen on mobile */
+  .quality-badge-float {
+    top: 14px;
+    right: 14px;
+    max-width: 170px;
+    padding: 10px 14px;
+  }
+  .quality-badge-float strong {
+    font-size: 1.05rem;
+  }
+  .quality-badge-float span {
+    font-size: 0.6875rem;
+  }
+
   .delivery-grid,
   .process-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
+
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .floating-wa-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .floating-wa-btn span.label {
     display: none;
   }
-  .floating-wa-btn {
-    padding: 12px;
-    border-radius: 50%;
+  .floating-wa-btn svg {
+    width: 26px;
+    height: 26px;
   }
+
   .fb-iframe-container {
-    padding: 8px 4px;
+    padding: 10px 4px;
+  }
+}
+
+/* Small Phones & Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .brand-masthead {
+    padding: 14px 10px 10px;
+  }
+  .brand-masthead .brand-title {
+    font-size: clamp(1.85rem, 8.5vw, 2.5rem);
+    letter-spacing: 0.12em;
+  }
+  .brand-masthead .brand-tagline {
+    font-size: 0.5875rem;
+    letter-spacing: 0.1em;
+  }
+
+  .btn-nav-order {
+    padding: 6px 11px;
+    font-size: 0.75rem;
+    gap: 4px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .hero-cta-group .btn {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .fb-feed-card-header {
+    padding: 14px 14px;
+  }
+  .fb-title-wrap h3 {
+    font-size: 0.9375rem;
+  }
+  .fb-feed-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .fb-sidebar-card {
+    padding: 18px 14px;
+  }
+
+  .cta-banner {
+    padding: 30px 16px;
+  }
+  .cta-banner h2 {
+    font-size: 1.5rem;
+  }
+  .cta-banner .cta-buttons .btn {
+    width: 100%;
+  }
+
+  .faq-question {
+    padding: 14px 16px;
+    font-size: 0.9375rem;
+  }
+  .faq-answer {
+    padding: 0 16px 14px;
+    font-size: 0.8125rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
   }
 }

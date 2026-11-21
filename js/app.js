@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // WhatsApp default order inquiry link
   const defaultWhatsAppText = encodeURIComponent(
-    "Hello Newora Fashion! 👋\n\nI saw your new stock arrivals on your Facebook page and would like to place an order. Please share available sizes and doorstep courier delivery details."
+    "Hello Newora Fashion! 👋\n\nI saw your new stock arrivals on your Facebook page and would like to place an order. Please share available sizes and islandwide courier delivery details."
   );
   const waFullUrl = `https://wa.me/${NEWORA_CONFIG.whatsappNumber}?text=${defaultWhatsAppText}`;
 
@@ -67,20 +67,42 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 4. MOBILE NAVIGATION MENU TOGGLE
+  // 4. MOBILE NAVIGATION MENU TOGGLE (Enhanced Responsive Behavior)
   // =========================================================================
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
 
   if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+    function toggleMenu(open) {
+      const willOpen = typeof open === 'boolean' ? open : !navLinks.classList.contains('active');
+      navLinks.classList.toggle('active', willOpen);
+      menuToggle.classList.toggle('active', willOpen);
+      menuToggle.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    }
+
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
     });
 
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
+        toggleMenu(false);
       });
+    });
+
+    // Close when clicking outside menu on mobile
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && e.target !== menuToggle) {
+        toggleMenu(false);
+      }
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+        toggleMenu(false);
+      }
     });
   }
 

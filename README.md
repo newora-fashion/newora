@@ -1,7 +1,7 @@
 # NEWORA FASHION - Official Website
 
 > **High-converting, ultra-fast, mobile-first website for "Newora Fashion"**  
-> Specially crafted for social media apparel sellers with direct Facebook Live Feed integration, instant Messenger & WhatsApp ordering, and doorstep speed courier delivery. Ready for 100% free hosting on **GitHub Pages**.
+> Specially crafted for social media apparel sellers with direct Facebook Live Feed integration, instant Messenger & WhatsApp ordering, and fast islandwide courier delivery. Ready for 100% free hosting on **GitHub Pages**.
 
 ---
 
@@ -13,8 +13,8 @@
    - Connected directly to your official Facebook Page (`https://www.facebook.com/profile.php?id=61596531761510`).
    - **No need to update the website manually!** Whenever you post new stock updates, photos, or prices on your Facebook Page, they immediately appear on your website in real time.
    - Customers can browse posts and even send/view messages directly through the Facebook embed or Messenger.
-3. **Speed Courier & Doorstep Delivery Spotlight**:
-   - Highlighted *"Redi Gedattama Courier Karanawa"* (Direct Doorstep Delivery) and 24-48h Speed Courier across all banners, trust pills, process steps, and FAQs.
+3. **Speed Courier & Home Delivery Spotlight**:
+   - Highlighted *"Redi Gedaratama Courier Karanawa"* (Fast Home Delivery) and 24-48h Speed Courier across all banners, trust pills, process steps, and FAQs.
 4. **100% Premium Fabric & Quality Material Focus**:
    - Dedicated Quality Guarantee section highlighting handpicked linen, combed cotton, and durable stitch finishes.
 5. **Direct Social Media / WhatsApp & Messenger Commerce**:
