@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   const NEWORA_CONFIG = {
     brandName: "Newora",
-    brandFullName: "Newora Fashion",
+    brandFullName: "Newora Collection",
     // Official Facebook Page
     facebookPageUrl: "https://www.facebook.com/profile.php?id=61596531761510",
     facebookPageId: "61596531761510",
     messengerUrl: "https://m.me/61596531761510",
-    // WhatsApp Hotline: 072243455 (Formatted as 9472243455 for wa.me)
-    whatsappNumber: "9472243455",
-    whatsappDisplay: "072243455",
+    // WhatsApp Hotline: 0722434555 (Formatted as 94722434555 for wa.me)
+    whatsappNumber: "94722434555",
+    whatsappDisplay: "0722434555",
     whatsappMessage: "can I get more informations about this!",
     instagramHandle: "neworafashion"
   };

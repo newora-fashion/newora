@@ -1,6 +1,6 @@
 # NEWORA FASHION - Official Website
 
-> **High-converting, ultra-fast, mobile-first website for "Newora Fashion"**  
+> **High-converting, ultra-fast, mobile-first website for "Newora Collection"**  
 > Specially crafted for social-media-based apparel commerce with instant WhatsApp ordering and express islandwide courier delivery (*Redi Gedaratama Delivery*). Ready for 100% free hosting on **GitHub Pages**.
 
 ---
@@ -18,12 +18,12 @@
 5. **Standard Sri Lankan Size Guide**:
    - Complete UK & Sri Lankan sizing reference table (S, M, L, XL, XXL) with bust, waist, hips, and fit-confidence tips.
 6. **Direct Social Media & WhatsApp Commerce**:
-   - 1-Click WhatsApp order buttons linking to hotline **072243455** with pre-filled short inquiry message: `can I get more informations about this!`.
+   - 1-Click WhatsApp order buttons linking to hotline **0722434555** with pre-filled short inquiry message: `can I get more informations about this!`.
    - Direct connection to official Facebook Page (`https://www.facebook.com/profile.php?id=61596531761510`) and Instagram.
    - Floating WhatsApp button for immediate mobile ordering.
 7. **Ultra-Fast Performance**:
    - Pure Semantic HTML5, CSS3, and Vanilla JavaScript. Zero heavy animations, zero bloated frameworks — loads in milliseconds.
-8. **Ultimate SEO for "Newora Fashion"**:
+8. **Ultimate SEO for "Newora Collection"**:
    - Full Schema.org JSON-LD Structured Data (`ClothingStore`, `WebSite`, `FAQPage` rich snippets).
    - Complete Open Graph, Twitter Cards, `robots.txt`, and `sitemap.xml` configured for instant Google search indexing.
 
@@ -62,7 +62,7 @@ In your terminal / PowerShell in this folder (`d:\Documents\Newora`), run:
 ```bash
 git init
 git add .
-git commit -m "Complete Newora Fashion website"
+git commit -m "Complete Newora Collection website"
 git branch -M main
 git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPOSITORY_NAME>.git
 git push -u origin main
@@ -90,12 +90,12 @@ Open [js/app.js](file:///d:/Documents/Newora/js/app.js):
 ```javascript
 const NEWORA_CONFIG = {
   brandName: "Newora",
-  brandFullName: "Newora Fashion",
+  brandFullName: "Newora Collection",
   facebookPageUrl: "https://www.facebook.com/profile.php?id=61596531761510",
   facebookPageId: "61596531761510",
   messengerUrl: "https://m.me/61596531761510",
-  whatsappNumber: "9472243455", // WhatsApp hotline (072243455)
-  whatsappDisplay: "072243455",
+  whatsappNumber: "94722434555", // WhatsApp hotline (0722434555)
+  whatsappDisplay: "0722434555",
   whatsappMessage: "can I get more informations about this!",
   instagramHandle: "neworafashion"
 };
@@ -103,7 +103,7 @@ const NEWORA_CONFIG = {
 
 ---
 
-## 🔍 How to Rank #1 on Google for "newora fashion"
+## 🔍 How to Rank #1 on Google for "newora collection"
 
 1. **Submit to Google Search Console**:
    - Go to [Google Search Console](https://search.google.com/search-console).
