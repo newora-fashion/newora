@@ -1,7 +1,7 @@
 /**
  * NEWORA FASHION - Official Website Logic
  * Ultra-Fast Vanilla JavaScript (No Heavy Dependencies)
- * Seamless Facebook Page Live Feed, Messenger & WhatsApp Integration
+ * Seamless Facebook Page Posts, Messenger & WhatsApp Integration
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,18 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
     facebookPageUrl: "https://www.facebook.com/profile.php?id=61596531761510",
     facebookPageId: "61596531761510",
     messengerUrl: "https://m.me/61596531761510",
-    // Update your WhatsApp number in international format (e.g. 94770000000 without + or spaces)
-    whatsappNumber: "94770000000",
+    // WhatsApp Hotline: 072243455 (Formatted as 9472243455 for wa.me)
+    whatsappNumber: "9472243455",
+    whatsappDisplay: "072243455",
+    whatsappMessage: "can I get more informations about this!",
     instagramHandle: "neworafashion"
   };
 
   // =========================================================================
   // 2. DYNAMIC SOCIAL & CHAT ACTION LINKS
   // =========================================================================
-  // WhatsApp default order inquiry link
-  const defaultWhatsAppText = encodeURIComponent(
-    "Hello Newora Fashion! 👋\n\nI saw your new stock arrivals on your Facebook page and would like to place an order. Please share available sizes and islandwide courier delivery details."
-  );
+  // WhatsApp default order inquiry link with requested short message
+  const defaultWhatsAppText = encodeURIComponent(NEWORA_CONFIG.whatsappMessage);
   const waFullUrl = `https://wa.me/${NEWORA_CONFIG.whatsappNumber}?text=${defaultWhatsAppText}`;
 
   // Update all WhatsApp buttons

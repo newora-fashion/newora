@@ -1,33 +1,31 @@
 # NEWORA FASHION - Official Website
 
 > **High-converting, ultra-fast, mobile-first website for "Newora Fashion"**  
-> Specially crafted for social media apparel sellers with direct Facebook Live Feed integration, instant Messenger & WhatsApp ordering, and fast islandwide courier delivery. Ready for 100% free hosting on **GitHub Pages**.
+> Specially crafted for social-media-based apparel commerce with instant WhatsApp ordering and express islandwide courier delivery (*Redi Gedaratama Delivery*). Ready for 100% free hosting on **GitHub Pages**.
 
 ---
 
 ## 🌟 Key Features Built-In
 
-1. **Prominent Branding**:
-   - Giant luxury editorial masthead displaying **NEWORA** right at the top as requested.
-2. **Direct Facebook Page Live Feed (Timeline & Messages)**:
-   - Connected directly to your official Facebook Page (`https://www.facebook.com/profile.php?id=61596531761510`).
-   - **No need to update the website manually!** Whenever you post new stock updates, photos, or prices on your Facebook Page, they immediately appear on your website in real time.
-   - Customers can browse posts and even send/view messages directly through the Facebook embed or Messenger.
-3. **Speed Courier & Home Delivery Spotlight**:
-   - Highlighted *"Redi Gedaratama Courier Karanawa"* (Fast Home Delivery) and 24-48h Speed Courier across all banners, trust pills, process steps, and FAQs.
-4. **100% Premium Fabric & Quality Material Focus**:
-   - Dedicated Quality Guarantee section highlighting handpicked linen, combed cotton, and durable stitch finishes.
-5. **Direct Social Media / WhatsApp & Messenger Commerce**:
-   - 1-Click buttons to chat on Facebook Messenger, visit the FB Page, or order via WhatsApp hotline.
-   - Floating WhatsApp contact pill for immediate live inquiries.
-6. **Ultra-Fast & Zero-Bloat Performance**:
-   - Pure Semantic HTML5, CSS3, and Vanilla JavaScript.
-   - **No heavy animation libraries, no jQuery, no framework lag** — loads in milliseconds.
-7. **Ultimate SEO for `"newora fashion"`**:
-   - Semantic heading hierarchy (`H1`, `H2`, `H3`).
-   - Rich Meta Tags, OpenGraph & Twitter Card tags.
-   - **Full Schema.org JSON-LD Structured Data** (`ClothingStore`, `WebSite`, and `FAQPage` rich snippets).
-   - Built-in `robots.txt` and `sitemap.xml`.
+1. **Prominent Luxury Masthead**:
+   - Giant editorial title displaying **NEWORA** prominently right at the very top.
+2. **Speed Courier & Home Delivery Spotlight**:
+   - Express 24–48h islandwide courier delivery directly to the customer's home with Cash on Delivery (COD) and real-time courier tracking.
+3. **100% Premium Fabric & Material Guarantee**:
+   - Dedicated Quality Guarantee section highlighting handpicked linen, combed cotton, and durable stitch inspections.
+4. **Curated Signature Collections Showcase**:
+   - Highlights Newora's signature style pillars (Breathable Linen, Modern Coordinates, Flowing Crepes & Flares, Smart Casual).
+5. **Standard Sri Lankan Size Guide**:
+   - Complete UK & Sri Lankan sizing reference table (S, M, L, XL, XXL) with bust, waist, hips, and fit-confidence tips.
+6. **Direct Social Media & WhatsApp Commerce**:
+   - 1-Click WhatsApp order buttons linking to hotline **072243455** with pre-filled short inquiry message: `can I get more informations about this!`.
+   - Direct connection to official Facebook Page (`https://www.facebook.com/profile.php?id=61596531761510`) and Instagram.
+   - Floating WhatsApp button for immediate mobile ordering.
+7. **Ultra-Fast Performance**:
+   - Pure Semantic HTML5, CSS3, and Vanilla JavaScript. Zero heavy animations, zero bloated frameworks — loads in milliseconds.
+8. **Ultimate SEO for "Newora Fashion"**:
+   - Full Schema.org JSON-LD Structured Data (`ClothingStore`, `WebSite`, `FAQPage` rich snippets).
+   - Complete Open Graph, Twitter Cards, `robots.txt`, and `sitemap.xml` configured for instant Google search indexing.
 
 ---
 
@@ -36,16 +34,16 @@
 ```text
 Newora/
 │
-├── index.html          # Main HTML structure with FB live feed & all SEO tags
+├── index.html          # Main HTML structure with complete SEO & schema
 ├── robots.txt          # Google & Bing crawler instructions
 ├── sitemap.xml         # XML Sitemap for Google Search Console
-├── README.md           # Documentation & GitHub Pages setup guide
+├── README.md           # Documentation & setup guide
 │
 ├── css/
 │   └── style.css       # Clean, modern, responsive CSS styling
 │
 └── js/
-    └── app.js          # Fast JS logic for FB/WA links, mobile menu & FAQ
+    └── app.js          # Fast JS logic for WA hotline, mobile menu & FAQ
 ```
 
 ---
@@ -64,7 +62,7 @@ In your terminal / PowerShell in this folder (`d:\Documents\Newora`), run:
 ```bash
 git init
 git add .
-git commit -m "Update Newora Fashion with Live Facebook feed"
+git commit -m "Complete Newora Fashion website"
 git branch -M main
 git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPOSITORY_NAME>.git
 git push -u origin main
@@ -87,7 +85,7 @@ git push -u origin main
 
 ## ⚙️ How to Customize Your Contact Details
 
-### 1. Update Your WhatsApp Number
+### Update Your WhatsApp Hotline
 Open [js/app.js](file:///d:/Documents/Newora/js/app.js):
 ```javascript
 const NEWORA_CONFIG = {
@@ -96,14 +94,16 @@ const NEWORA_CONFIG = {
   facebookPageUrl: "https://www.facebook.com/profile.php?id=61596531761510",
   facebookPageId: "61596531761510",
   messengerUrl: "https://m.me/61596531761510",
-  whatsappNumber: "94770000000", // Replace with your real WhatsApp number
+  whatsappNumber: "9472243455", // WhatsApp hotline (072243455)
+  whatsappDisplay: "072243455",
+  whatsappMessage: "can I get more informations about this!",
   instagramHandle: "neworafashion"
 };
 ```
 
 ---
 
-## 🔍 How to Rank #1 on Google for `"newora fashion"`
+## 🔍 How to Rank #1 on Google for "newora fashion"
 
 1. **Submit to Google Search Console**:
    - Go to [Google Search Console](https://search.google.com/search-console).
@@ -112,6 +112,6 @@ const NEWORA_CONFIG = {
    - Click **URL Inspection** -> Enter your URL -> Click **Request Indexing**.
 
 2. **Add Your Website Link to Your Facebook Page**:
-   - Go to your Facebook Page `https://www.facebook.com/profile.php?id=61596531761510`
+   - Go to your Facebook Page: `https://www.facebook.com/profile.php?id=61596531761510`
    - In the **About / Website** section, add your GitHub Pages website link.
    - This backlink gives your website immediate authority on Google.
